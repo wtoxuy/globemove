@@ -47,7 +47,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3" onClick={closeMenu}>
             <div className="flex items-center gap-2">
-              <AppLogo src="/assets/images/app_logo.png" size={40} />
+              <AppLogo src="/assets/images/672687bb-c03e-4d7e-bb26-a0b74cec1756-1785928506284.png" size={40} />
               <span className={`text-xl font-bold transition-colors duration-300 ${scrolled ? 'text-primary' : 'text-white'}`}>Globe Move</span>
             </div>
           </Link>
