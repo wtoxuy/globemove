@@ -6,18 +6,43 @@ export default function ContactSection() {
   const [form, setForm] = useState({ name: '', phone: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    setError('');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY',
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          message: form.message,
+          subject: 'Новая заявка с сайта GlobeMove',
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setError('Произошла ошибка при отправке. Попробуйте ещё раз.');
+      }
+    } catch {
+      setError('Произошла ошибка при отправке. Попробуйте ещё раз.');
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1200);
+    }
   };
 
   return (
@@ -204,6 +229,10 @@ export default function ContactSection() {
                       />
                     </div>
                   </div>
+
+                  {error && (
+                    <p className="mt-3 text-sm text-red-400">{error}</p>
+                  )}
 
                   <button
                     type="submit"
