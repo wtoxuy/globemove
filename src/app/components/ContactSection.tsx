@@ -111,7 +111,7 @@ export default function ContactSection() {
                     rel="noopener noreferrer"
                     className="text-lg font-semibold text-white transition-colors hover:text-accent"
                   >
-                    +998 90 906 03 01
+                    +998 (90) 906-03-01
                   </a>
                 </div>
               </div>
