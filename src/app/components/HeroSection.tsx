@@ -6,8 +6,8 @@ export default function HeroSection() {
     <section
       id="home-hero"
       className="relative flex min-h-screen items-start overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/assets/images/ChatGPT_Image_5____._2026__.__12_49_29-1785916583526.png)', backgroundSize: 'cover', backgroundPosition: 'center center', imageRendering: 'auto' }}
-    >
+      style={{ backgroundImage: 'url(/assets/images/ChatGPT_Image_5____._2026__.__12_49_29-1785916583526.png)', backgroundSize: 'cover', backgroundPosition: 'center center', imageRendering: 'auto' }}>
+
       {/* Overlay */}
       <div className="hero-overlay absolute inset-0" />
 
@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="max-w-2xl -mt-2 animate-fade-in md:-mt-6 lg:-mt-10">
           {/* Badge */}
           <span className="mb-6 inline-block rounded-full bg-accent/20 px-4 py-1.5 text-sm font-semibold text-accent">
-            Globe Move
+
           </span>
 
           {/* Heading */}
@@ -31,12 +31,12 @@ export default function HeroSection() {
           {/* CTA */}
           <Link
             href="#home-contact"
-            className="inline-flex items-center justify-center rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:bg-accent-hover shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
-          >
+            className="inline-flex items-center justify-center rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:bg-accent-hover shadow-lg hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
+
             Получить консультацию
           </Link>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }

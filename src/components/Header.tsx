@@ -48,7 +48,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3" onClick={closeMenu}>
             <div className="flex items-center gap-2">
               <AppLogo src="/assets/images/app_logo.png" size={40} />
-              <span className="text-xl font-bold text-white">Globe Move</span>
+              <span className={`text-xl font-bold transition-colors duration-300 ${scrolled ? 'text-primary' : 'text-white'}`}>Globe Move</span>
             </div>
           </Link>
 
@@ -58,7 +58,7 @@ export default function Header() {
               <Link
                 key={link?.href}
                 href={link?.href}
-                className="text-sm font-medium text-white/80 transition-colors hover:text-accent"
+                className={`text-sm font-medium transition-colors hover:text-accent ${scrolled ? 'text-primary/80' : 'text-white/80'}`}
               >
                 {link?.label}
               </Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import AppLogo from './ui/AppLogo';
 
 const footerLinks = [
   { label: 'О компании', href: '#home-about' },
@@ -17,6 +17,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-6">
           <div className="flex items-center gap-2 justify-center">
+            <AppLogo src="/assets/images/app_logo.png" size={40} />
             <span className="text-xl font-bold text-white">Globe Move</span>
           </div>
         </div>
@@ -27,7 +28,16 @@ export default function Footer() {
         </p>
 
         {/* Nav */}
-        <nav className="mb-8" aria-label="Навигация в подвале">
+        <nav className="mb-8 flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Навигация в подвале">
+          {footerLinks?.map((link) => (
+            <a
+              key={link?.href}
+              href={link?.href}
+              className="text-sm text-white/60 hover:text-accent transition-colors"
+            >
+              {link?.label}
+            </a>
+          ))}
         </nav>
 
         {/* Copyright */}
