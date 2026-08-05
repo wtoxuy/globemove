@@ -32,7 +32,7 @@ const AppLogo = memo(function AppLogo({
       {/* Show image if src provided, otherwise show icon */}
       {src ?
       <AppImage
-        src="/assets/images/logo_under_1MB-1785913232696.png"
+        src={src}
         alt="Logo"
         width={size}
         height={size}
