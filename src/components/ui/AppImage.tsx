@@ -35,7 +35,7 @@ const AppImage = memo(function AppImage({
     fill = false,
     sizes,
     onClick,
-    fallbackSrc = '/assets/images/no_image.png',
+    fallbackSrc = '/assets/images/672687bb-c03e-4d7e-bb26-a0b74cec1756-1785920433028.png',
     loading = 'lazy',
     unoptimized = false,
     ...props
