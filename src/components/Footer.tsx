@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-6">
           <div className="flex items-center gap-2 justify-center">
-            <AppLogo src="/assets/images/app_logo.png" size={40} />
+            <AppLogo src="/assets/images/672687bb-c03e-4d7e-bb26-a0b74cec1756-1785928506284.png" size={40} />
             <span className="text-xl font-bold text-white">Globe Move</span>
           </div>
         </div>

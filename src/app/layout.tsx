@@ -22,10 +22,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GlobeMove — Международные перевозки',
     description: 'Комплексные логистические решения из Ташкента: авто, авиа, таможня, экспорт/импорт.',
-    images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
+    images: [{ url: '/assets/images/672687bb-c03e-4d7e-bb26-a0b74cec1756-1785928473832.png', width: 1200, height: 630 }],
   },
   icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    icon: [{ url: '/assets/images/logo-1785928993276.ico', type: 'image/x-icon' }],
   },
 };
 
