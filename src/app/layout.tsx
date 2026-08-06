@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: [{ url: '/assets/images/672687bb-c03e-4d7e-bb26-a0b74cec1756-1785928473832.png', width: 1200, height: 630 }],
   },
   icons: {
-    icon: [{ url: '/assets/images/logo-1785928993276.ico', type: 'image/x-icon' }],
+    icon: [{ url: '/assets/images/favicon-1785994791815.ico', type: 'image/x-icon' }],
   },
 };
 
