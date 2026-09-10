@@ -90,8 +90,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-white/60">Email</p>
-                  <a href="mailto:nigmatovsanjar05@gmail.com" className="text-lg font-semibold text-white transition-colors hover:text-accent">
-                    nigmatovsanjar05@gmail.com
+                  <a href="mailto:globemove05@gmail.com" className="text-lg font-semibold text-white transition-colors hover:text-accent">
+                    globemove05@gmail.com
                   </a>
                 </div>
               </div>
